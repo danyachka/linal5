@@ -11,7 +11,7 @@ GET_ALL = -1
 def getLowestEigenvectors(m: Matrix, k: int) -> [Matrix]:
     a = m.eigenvects()
 
-    sorted(a, key=lambda x: x[0])
+    a = sorted(a, key=lambda x: x[0])
 
     vectors = []
     for val in a:
